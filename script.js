@@ -91,26 +91,111 @@
 
 // }
 // console.log("============================================");
-//Teste de Login
+// Teste de Login
 
-let objetoServidor = {
-    acesso: true,
-    login: "mundojs",
-};
+// let objetoServidor = {
+//     acesso: true,
+//     login: "mundojs",
+// };
 
-let objetoServidor2 = {
-    erro: "Erro ao conectar ao servidor",
+// let objetoServidor2 = {
+//     erro: "Erro ao conectar ao servidor",
 
-};
+// };
 
-function conexaoLogin(respostaDoServidor) {
-    if(respostaDoServidor.erro == null) {
-        if(respostaDoServidor.acesso){
-            console.log(`login: ${respostaDoServidor.login}`);
-        } else {
-            console.log("Acesso Negado");
-        }
-    } else {
-        console.log(respostaDoServidor.erro);
+// function conexaoLogin(respostaDoServidor) {
+//     if(respostaDoServidor.erro == null) {
+//         if(respostaDoServidor.acesso){
+//             console.log(`login: ${respostaDoServidor.login}`);
+//         } else {
+//             console.log("Acesso Negado");
+//         }
+//     } else {
+//         console.log(respostaDoServidor.erro);
+//     }
+// }
+// console.log("============================================");
+// let alunos = [
+//     {
+//         nome: "Maria",
+//         nota: 8
+//     },
+
+//     {
+//         nome: "Pedro",
+//         nota: 4
+//     },
+
+//     {
+//         nome: "João",
+//         nota: 10
+//     },
+
+//     {
+//         nome: "Paulo",
+//         nota: 9
+//     },
+
+//     {
+//         nome: "Ana",
+//         nota: 7
+//     },
+//     {
+//         nome: "Bianca",
+//         nota: 6
+//     },
+// ]
+
+// console.log("FOR");
+// for (let i = 0; i < alunos.length; i++) {
+//     if (alunos[i].nota > 7) {
+//         console.log(`${alunos[i].nome}: passou`);   
+//     }
+// }
+
+// console.log("============================================");
+// console.log("FOR OF");
+// for (let aluno of alunos) {
+//     if (aluno.nota > 7) {
+//         console.log(`${aluno.nome} : passou`);
+//     }
+// }
+console.log("============================================");
+console.log("Fibonacci For");
+function fibonacci (n) {
+    if (n < 2) {
+        return n;
     }
+
+    let anterior = 1;
+    let penultimo = 0;
+
+    for (let i = 2; i <=n; i++) {
+        if (i == n) {
+            return penultimo + anterior;
+        }
+        
+        
+        let temp = penultimo;
+        penultimo = anterior;
+        anterior = temp + penultimo;
+    }
+
+
+    // let posicao = 2;
+    // let anterior = 1;
+    // let penultimo = 0;
+
+    // while (true) {
+    //     if (posicao == n) {
+    //         return penultimo + anterior;
+    //     }
+
+    //     let temp = penultimo;
+    //     penultimo = anterior;
+    //     anterior = temp + penultimo;
+    //     posicao ++;
+    // }
+
 }
+
